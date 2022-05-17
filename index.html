@@ -5,8 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FORM VALIDATION</title>
+  
 </head>
 <body>
   <!-- MAKE CHANGES HERE -->
+  <!--Gender code-->
+  <section>
+  <label for="gender"> Select you gender</label>
+<select name="gender">
+<option value="none" selected>Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">other</option>
+  <script>
+var address = document. reg_form. address;
+var gender = document. reg_form. gender;
+if (address. value. length <= 0) {
+alert("Address is required");
+address. focus();
+return false;
+}
+  </script>
+  </section>
 </body>
 </html>
